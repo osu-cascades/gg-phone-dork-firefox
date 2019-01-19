@@ -6,7 +6,8 @@
   "description": "A Chrome extension for invoking search queries with a phone number.",
 
   "icons": {
-    "gg-logo": "icons/gg-icon.png"
+    "48": "icons/gg-icon-48.png",
+    "96": "icons/gg-icon-96.png"
   },
 
   "content_scripts": [
