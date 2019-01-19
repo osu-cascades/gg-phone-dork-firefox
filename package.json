@@ -1,0 +1,19 @@
+{
+  "name": "gg-phone-dork-firefox",
+  "version": "1.0.0",
+  "description": "TODO Hello",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osu-cascades/gg-phone-dork-firefox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osu-cascades/gg-phone-dork-firefox/issues"
+  },
+  "homepage": "https://github.com/osu-cascades/gg-phone-dork-firefox#readme"
+}
