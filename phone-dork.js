@@ -1,6 +1,7 @@
 browser.contextMenus.create({
     title: "Search All",
     contexts: ["selection"],  // ContextType
+    onclick: searchAll, 
 });
 
 browser.contextMenus.create({
