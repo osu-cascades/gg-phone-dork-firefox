@@ -9,11 +9,14 @@
     "48": "icons/gg-icon-48.png",
     "96": "icons/gg-icon-96.png"
   },
+  "background": {
+    "scripts": ["functions/google.js", "functions/twilio.js", "phone-dork.js"]
+  },
 
-  "content_scripts": [
-    {
-      "matches": ["*://*.mozilla.org/*"],
-      "js": ["phone-dork.js"]
-    }
+  "permissions": [
+    "activeTab",
+    "storage",
+    "contextMenus"
   ]
+
 }

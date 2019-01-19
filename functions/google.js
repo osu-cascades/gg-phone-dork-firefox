@@ -8,5 +8,3 @@ searchGoogle = function(selection) {
     });
     browser.tabs.create({url: "https://www.google.com/search?q=" + query });
 };
-
-module.exports = searchGoogle

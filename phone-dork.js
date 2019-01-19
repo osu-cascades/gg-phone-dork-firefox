@@ -1,5 +1,3 @@
-import searchGoogle from '/functions/google.js'
-
 browser.contextMenus.create({
     title: "Search All",
     contexts: ["selection"],  // ContextType
@@ -15,5 +13,3 @@ browser.contextMenus.create({
     contexts:["selection"],  // ContextType
     onclick: searchGoogle // A callback function
 });
-
-console.log("test")
