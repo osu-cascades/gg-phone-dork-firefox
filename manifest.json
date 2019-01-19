@@ -5,20 +5,22 @@
 
   "description": "A Firefox extension for invoking search queries with a phone number.",
 
+  "applications": {
+    "gecko": {
+      "id": "phonedork@gg.com"
+    }
+  },
+
+  "browser_action": {
+    "default_icon": "icons/gg-icon.png",
+    "default_popup": "browser-action.html",
+    "default_title": "Guardian Group PhoneDork"
+  },
+
   "icons": {
     "48": "icons/gg-icon-48.png",
     "96": "icons/gg-icon-96.png"
   },
-
-  "browser_action": {
-    "icons": {
-      "19": "icons/gg-48.png",
-      "38": "icons/gg-96.png"
-    },
-    "default_title": "PhoneDork",
-    "default_popup": "browser-action.html"
-  },
-
   "background": {
     "scripts": [
       "functions/options.js",
