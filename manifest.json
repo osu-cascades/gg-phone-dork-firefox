@@ -9,10 +9,20 @@
     "48": "icons/gg-icon-48.png",
     "96": "icons/gg-icon-96.png"
   },
+
+  "browser_action": {
+    "icons": {
+      "19": "icons/gg-48.png",
+      "38": "icons/gg-96.png"
+    },
+    "default_title": "PhoneDork",
+    "default_popup": "browser-action.html"
+  },
+
   "background": {
     "scripts": [
-      "function/options.js",
-      "function/phone-parser.js",
+      "functions/options.js",
+      "functions/phone-parser.js",
       "functions/google.js",
       "functions/twilio.js",
       "phone-dork.js"
