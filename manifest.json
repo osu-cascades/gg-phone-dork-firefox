@@ -12,7 +12,7 @@
   },
 
   "browser_action": {
-    "default_icon": "icons/gg-icon.png",
+    "default_icon": "icons/gg-icon-96.png",
     "default_popup": "browser-action.html",
     "default_title": "Guardian Group PhoneDork"
   },
