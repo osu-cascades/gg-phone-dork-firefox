@@ -6,6 +6,7 @@ browser.contextMenus.create({
 browser.contextMenus.create({
     title: "Search in Twilio",
     contexts:["selection"],  // ContextType
+    onclick: searchTwilio // A callback function
 });
 
 browser.contextMenus.create({
