@@ -1,0 +1,17 @@
+body {
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  color: #2274a5;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 400px;
+  grid-template-rows: auto;
+  background-color: #131b23;
+  color: #e9f1f7;
+}
+a {
+  color: #2274a5;
+}
