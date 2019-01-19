@@ -1,12 +1,13 @@
 {
-  "manifest_version": 1,
-  "name": "Guardian Group Phone Dork",
-  "version": "1.0.0",
+  "manifest_version": 2,
+  "name": "Guardian Group Phone Dork FF",
+  "version": "1.0",
 
-  "description": "A Chrome extension for invoking search queries with a phone number.",
+  "description": "A Firefox extension for invoking search queries with a phone number.",
 
   "icons": {
-    "gg-logo": "icons/gg-icon.png"
+    "48": "icons/gg-icon-48.png",
+    "96": "icons/gg-icon-96.png"
   },
 
   "content_scripts": [
