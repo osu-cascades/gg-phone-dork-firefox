@@ -1,0 +1,18 @@
+{
+  "manifest_version": 1,
+  "name": "Guardian Group Phone Dork",
+  "version": "1.0.0",
+
+  "description": "A Chrome extension for invoking search queries with a phone number.",
+
+  "icons": {
+    "gg-logo": "icons/gg-icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["phone-dork.js"]
+    }
+  ]
+}
