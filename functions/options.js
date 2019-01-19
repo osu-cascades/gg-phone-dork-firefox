@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", setup);
 
 function setup() {
   restoreOptions();
