@@ -1,19 +1,35 @@
 {
   "manifest_version": 2,
-  "name": "Guardian Group Phone Dork",
+  "name": "Guardian Group Phone Dork FF",
   "version": "1.0",
 
-  "description": "A Chrome extension for invoking search queries with a phone number.",
+  "description": "A Firefox extension for invoking search queries with a phone number.",
+
+  "applications": {
+    "gecko": {
+      "id": "phonedork@gg.com"
+    }
+  },
+
+  "browser_action": {
+    "default_icon": "icons/gg-icon-96.png",
+    "default_popup": "browser-action.html",
+    "default_title": "Guardian Group PhoneDork"
+  },
 
   "icons": {
     "48": "icons/gg-icon-48.png",
     "96": "icons/gg-icon-96.png"
   },
+  "background": {
+    "scripts": [
+      "functions/options.js",
+      "functions/phone-parser.js",
+      "functions/google.js",
+      "functions/twilio.js",
+      "phone-dork.js"
+    ]
+  },
 
-  "content_scripts": [
-    {
-      "matches": ["*://*.mozilla.org/*"],
-      "js": ["phone-dork.js"]
-    }
-  ]
+  "permissions": ["activeTab", "storage", "contextMenus"]
 }

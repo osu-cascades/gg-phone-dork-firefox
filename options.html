@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>PhoneDork Options</title>
+    <script src="functions/options.js"></script>
+    <script src="functions/popup.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/options.css" />
+  </head>
+  <body>
+    <h1>Twilio Options</h1>
+    <p>
+      Obtain your Twilio <em>Account SID</em> and <em>Auth Token</em> from the
+      <a href="https://www.twilio.com/console">Twilio Console</a>, and enter
+      them here.
+    </p>
+    <label for="twilio_account_id">Account SID</label>
+    <input
+      type="textbox"
+      id="twilio_account_id"
+      name="twilio_account_id"
+      size="40"
+    />
+    <br />
+    <br />
+    <label for="twilio_auth_token">Auth Token</label>
+    <input
+      type="textbox"
+      id="twilio_auth_token"
+      name="twilio_auth_token"
+      size="40"
+    />
+    <br />
+    <br />
+    <button id="save" class="button">Save</button>
+    <div id="status"></div>
+  </body>
+</html>
