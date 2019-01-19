@@ -10,7 +10,12 @@
     "96": "icons/gg-icon-96.png"
   },
   "background": {
-    "scripts": ["functions/google.js", "functions/twilio.js", "phone-dork.js"]
+    "scripts": [
+      "function/phone-parser.js"
+      "functions/google.js",
+      "functions/twilio.js",
+      "phone-dork.js"
+    ]
   },
 
   "permissions": [
