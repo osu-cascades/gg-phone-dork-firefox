@@ -16,9 +16,6 @@ function saveOptions() {
     function() {
       var status = document.getElementById("status");
       status.textContent = "Options saved.";
-      setTimeout(function() {
-        status.textContent = "";
-      }, 750);
     }
   );
 }
