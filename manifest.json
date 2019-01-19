@@ -11,17 +11,13 @@
   },
   "background": {
     "scripts": [
-      "function/phone-parser.js"
+      "function/options.js",
+      "function/phone-parser.js",
       "functions/google.js",
       "functions/twilio.js",
       "phone-dork.js"
     ]
   },
 
-  "permissions": [
-    "activeTab",
-    "storage",
-    "contextMenus"
-  ]
-
+  "permissions": ["activeTab", "storage", "contextMenus"]
 }
