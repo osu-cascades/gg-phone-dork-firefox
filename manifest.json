@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Guardian Group Phone Dork FF",
-  "version": "1.0",
+  "version": "1.1",
 
   "description": "A Firefox extension for invoking search queries with a phone number.",
 
@@ -27,6 +27,7 @@
       "functions/phone-parser.js",
       "functions/google.js",
       "functions/twilio.js",
+      "functions/search-all.js",
       "phone-dork.js"
     ]
   },
