@@ -24,19 +24,22 @@ function extractPhoneNumberDigits(text) {
 * @return boolean
 */
 function isValidSelection(selection) {
-	var tenDigitNumber;
+    var tenDigitNumber;
+    const selectionText = selection.selectionText;
+    const alertCode = `alert('The selection needs to be a valid phone number\\nYou selected:\\n\\n' + '${selectionText}');`;
+
 
 	try {
 	    tenDigitNumber = extractPhoneNumberDigits(selection.selectionText);
 	}
 	catch(err) {
-	    alert('The selection needs to be a number\nYou selected:\n\n' + selection.selectionText);
+        browser.tabs.executeScript({code : alertCode});
 	    return false;
 	}
 
 	var numberTest = /^\d{10}$/;
 	if( !numberTest.test(tenDigitNumber) ){
-		alert('The selection needs to be a valid phone number\nYou selected:\n\n' + selection.selectionText);
+        browser.tabs.executeScript({code : alertCode});
 		return false;
 	}
     return true;
